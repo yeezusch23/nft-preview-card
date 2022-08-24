@@ -1,0 +1,118 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-1: hsl(217, 54%, 11%);
+    --very-dark-blue-2: hsl(216, 50%, 16%);
+    --very-dark-blue-3: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--very-dark-blue-1);
+    font-family: sans-serif;
+}
+
+main {
+    border-radius: 13px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    background-color: var(--very-dark-blue-2);
+    width: 338px;
+    flex-shrink: 0;
+    box-shadow: 0 10px 45px hsl(216, 50%, 12%);
+}
+
+.img-container {
+    background-image: url(../images/image-equilibrium.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.icon-view-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.icon-view-container:hover {
+    background-color: hsla(178, 100%, 50%, 0.5);
+}
+
+.img-container img {
+    display: none;
+}
+
+.icon-view-container:hover > img {
+    display: block;
+}
+
+.content {
+    color: var(--soft-blue);
+    padding: .5rem 0;
+}
+
+h1 {
+    color: var(--white);
+    cursor: pointer;
+    transition: all .2s;
+}
+
+h1:hover {
+    color: var(--cyan);
+}
+
+.section-values {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1.9px solid var(--very-dark-blue-3);
+}
+.section-values div {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.section-values div b {
+    color: var(--cyan);
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 1rem;
+}
+
+.avatar-container {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-image: url(../images/image-avatar.png);
+    background-size: contain;
+}
+
+.section p b {
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.section p b:hover {
+    color: var(--cyan);
+}
+
+
